@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link rel="stylesheet" href="system.css">
+</head>
+<body>
+    <div class="reverse"><p id="demo">Enter your text</p>
+    <input type="text" id="input"><br>
+    <button onclick="fun()"> submit</button>
+</div>
+    <script>
+function fun(){
+     const x=document.getElementById('input').value;
+     const y= x.split("").reverse().join("");
+     document.getElementById("demo").innerHTML=y;
+
+}
+    </script>  
+</body>
+</html>
